@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineage</title>
+    <style>
+        #lineage_div{
+            height: 95vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .top-container img {
+            width: 350px; 
+        }
+        .top-container a {
+            text-decoration: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #f0f0f0;   
+        }
+    </style>
+</head>
+<body>
+    <div class="top-container">
+        <a href="/preview"><img src="[[url_for('static',filename='img/logo_beta.png')]]" alt="logo"></a>
+    </div>
+    <div id="lineage_div">
+        {% include src %}
+    </div>
+</body>
+</html>

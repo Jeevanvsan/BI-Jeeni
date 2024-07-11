@@ -1,0 +1,690 @@
+CustomVisual:
+    class: CustomVisual
+    position: layouts.position
+    type: CustomVisual
+FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A:
+    class: FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A
+    position: layouts.position
+    table: singleVisual.projections.table.queryRef
+PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A:
+    class: PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A
+    position: layouts.position
+    table: singleVisual.projections.table.queryRef
+actionButton:
+    class: ActionButton
+    icon: singleVisual.objects.icon
+    objects: singleVisual.objects
+    page_navigate_value: singleVisual.vcObjects.visualLink.properties.navigationSection.expr.Literal.Value
+    position: layouts.position
+    properties: singleVisual.objects.icon.properties
+    shapeType: singleVisual.objects.icon.properties.shapeType.expr.Literal.Value
+    type: actionButton
+    vcObjects: singleVisual.vcObjects
+    visual_link: singleVisual.vcObjects.visualLink
+    visual_link_show: singleVisual.vcObjects.visualLink.properties.show.expr.Literal.Value
+    visual_link_type: singleVisual.vcObjects.visualLink.properties.type.expr.Literal.Value
+    web_url: singleVisual.vcObjects.visualLink.properties.webUrl.expr.Literal.Value
+advancedSlicerVisual:
+    class: advancedSlicerVisual
+    column: singleVisual.projections.Values.queryRef
+    position: layouts.position
+    title:
+        alignment: singleVisual.vcObjects.title.properties.alignment
+        alignment_value: singleVisual.vcObjects.title.properties.alignment.expr.Literal.Value
+        background: singleVisual.vcObjects.title.properties.fontColor
+        background_percent: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.Percent
+        background_value: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.ColorId
+        bold: singleVisual.vcObjects.title.properties.bold
+        bold_value: singleVisual.vcObjects.title.properties.bold.expr.Literal.Value
+        font_color: singleVisual.vcObjects.title.properties.fontColor
+        font_color_percent: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+        font_color_value: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.vcObjects.title.properties.fontFamily
+        font_family_value: singleVisual.vcObjects.title.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.vcObjects.title.properties.fontSize
+        font_size_value: singleVisual.vcObjects.title.properties.fontSize.expr.Literal.Value
+        heading: singleVisual.vcObjects.title.properties.heading
+        heading_value: singleVisual.vcObjects.title.properties.heading.expr.Literal.Value
+        italic: singleVisual.vcObjects.title.properties.italic
+        italic_value: singleVisual.vcObjects.title.properties.italic.expr.Literal.Value
+        title_path: singleVisual.vcObjects.title
+        title_properties: singleVisual.vcObjects.title.properties
+        title_show: singleVisual.vcObjects.title.properties.show.expr.Literal.Value
+        title_text: singleVisual.vcObjects.title.properties.text.expr.Literal.Value
+        underline: singleVisual.vcObjects.title.properties.underline
+        underline_value: singleVisual.vcObjects.title.properties.underline.expr.Literal.Value
+    type: advancedSlicerVisual
+    vcObjects: singleVisual.vcObjects
+    visual_heading: selects.displayName
+barChart:
+    class: BarChart
+    column_x: singleVisual.projections.Y.queryRef
+    column_y: singleVisual.projections.Category.queryRef
+    legend: singleVisual.projections.Series.queryRef
+    multiples: singleVisual.projections.Rows.queryRef
+    position: layouts.position
+    title:
+        alignment: singleVisual.vcObjects.title.properties.alignment
+        alignment_value: singleVisual.vcObjects.title.properties.alignment.expr.Literal.Value
+        background: singleVisual.vcObjects.title.properties.fontColor
+        background_percent: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.Percent
+        background_value: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.ColorId
+        bold: singleVisual.vcObjects.title.properties.bold
+        bold_value: singleVisual.vcObjects.title.properties.bold.expr.Literal.Value
+        display_name: selects.displayName
+        font_color: singleVisual.vcObjects.title.properties.fontColor
+        font_color_percent: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+        font_color_value: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.vcObjects.title.properties.fontFamily
+        font_family_value: singleVisual.vcObjects.title.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.vcObjects.title.properties.fontSize
+        font_size_value: singleVisual.vcObjects.title.properties.fontSize.expr.Literal.Value
+        heading: singleVisual.vcObjects.title.properties.heading
+        heading_value: singleVisual.vcObjects.title.properties.heading.expr.Literal.Value
+        italic: singleVisual.vcObjects.title.properties.italic
+        italic_value: singleVisual.vcObjects.title.properties.italic.expr.Literal.Value
+        title_path: singleVisual.vcObjects.title
+        title_properties: singleVisual.vcObjects.title.properties
+        title_show: singleVisual.vcObjects.title.properties.show.expr.Literal.Value
+        title_text: singleVisual.vcObjects.title.properties.text.expr.Literal.Value
+        underline: singleVisual.vcObjects.title.properties.underline
+        underline_value: singleVisual.vcObjects.title.properties.underline.expr.Literal.Value
+    vcObjects: singleVisual.vcObjects
+    x_style:
+        axisStyle: singleVisual.objects.valueAxis.properties.axisStyle.expr.Literal.Value
+        axis_end: singleVisual.objects.valueAxis.properties.end.expr.Literal.Value
+        axis_start: singleVisual.objects.valueAxis.properties.start.expr.Literal.Value
+        bold: singleVisual.objects.valueAxis.properties.bold.expr.Literal.Value
+        decimals: singleVisual.objects.valueAxis.properties.labelPrecision.expr.Literal.Value
+        display_units: singleVisual.objects.valueAxis.properties.labelDisplayUnits.expr.Literal.Value
+        fontFamily: singleVisual.objects.valueAxis.properties.fontFamily.expr.Literal.Value
+        fontSize: singleVisual.objects.valueAxis.properties.fontSize.expr.Literal.Value
+        italic: singleVisual.objects.valueAxis.properties.italic.expr.Literal.Value
+        label_color_percent: singleVisual.objects.valueAxis.properties.labelColor.solid.color.expr.ThemeDataColor.Percent
+        label_color_value: singleVisual.objects.valueAxis.properties.labelColor.solid.color.expr.ThemeDataColor.ColorId
+        path: singleVisual.objects.valueAxis
+        properties: singleVisual.objects.valueAxis.properties
+        titleBold: singleVisual.objects.valueAxis.properties.titleBold.expr.Literal.Value
+        titleFontFamily: singleVisual.objects.valueAxis.properties.titleFontFamily.expr.Literal.Value
+        titleItalic: singleVisual.objects.valueAxis.properties.titleItalic.expr.Literal.Value
+        titleUnderline: singleVisual.objects.valueAxis.properties.titleUnderline.expr.Literal.Value
+        title_color_percent: singleVisual.objects.valueAxis.properties.titleColor.solid.color.expr.ThemeDataColor.Percent
+        title_color_value: singleVisual.objects.valueAxis.properties.titleColor.solid.color.expr.ThemeDataColor.ColorId
+        title_text: singleVisual.objects.valueAxis.properties.titleText.expr.Literal.Value
+        underline: singleVisual.objects.valueAxis.properties.underline.expr.Literal.Value
+    y_style:
+        bold: singleVisual.objects.categoryAxis.properties.bold.expr.Literal.Value
+        fontFamily: singleVisual.objects.categoryAxis.properties.fontFamily.expr.Literal.Value
+        fontSize: singleVisual.objects.categoryAxis.properties.fontSize.expr.Literal.Value
+        italic: singleVisual.objects.categoryAxis.properties.italic.expr.Literal.Value
+        label_color_percent: singleVisual.objects.categoryAxis.properties.labelColor.solid.color.expr.ThemeDataColor.Percent
+        label_color_value: singleVisual.objects.categoryAxis.properties.labelColor.solid.color.expr.ThemeDataColor.ColorId
+        maxMarginFactor: singleVisual.objects.categoryAxis.properties.maxMarginFactor.expr.Literal.Value
+        path: singleVisual.objects.categoryAxis
+        properties: singleVisual.objects.categoryAxis.properties
+        switchAxisPosition: singleVisual.objects.categoryAxis.properties.switchAxisPosition.expr.Literal.Value
+        titleBold: singleVisual.objects.categoryAxis.properties.titleBold.expr.Literal.Value
+        titleFontFamily: singleVisual.objects.categoryAxis.properties.titleFontFamily.expr.Literal.Value
+        titleItalic: singleVisual.objects.categoryAxis.properties.titleItalic.expr.Literal.Value
+        titleUnderline: singleVisual.objects.categoryAxis.properties.titleUnderline.expr.Literal.Value
+        title_color_percent: singleVisual.objects.categoryAxis.properties.titleColor.solid.color.expr.ThemeDataColor.Percent
+        title_color_value: singleVisual.objects.categoryAxis.properties.titleColor.solid.color.expr.ThemeDataColor.ColorId
+        title_text: singleVisual.objects.categoryAxis.properties.titleText.expr.Literal.Value
+        underline: singleVisual.objects.categoryAxis.properties.underline.expr.Literal.Value
+canvasSettings:
+    background_color: objects.background.properties.color.solid.color.expr.ThemeDataColor.ColorId
+    background_color_percent: objects.background.properties.color.solid.color.expr.ThemeDataColor.Percent
+    background_image_name: objects.background.properties.image.image.name.expr.Literal.Value
+    background_image_scaling: objects.background.properties.image.image.scaling.expr.Literal.Value
+    background_image_url: objects.background.properties.image.image.url.expr.ResourcePackageItem.ItemName
+    background_transparency: objects.background.properties.transparency.expr.Literal.Value
+    class: canvasSettings
+    verticalAlignment: objects.displayArea.properties.verticalAlignment.expr.Literal.Value
+card:
+    TrendLine: singleVisual.projections.TrendLine.queryRef
+    cards:
+    - card
+    - gauge
+    - multiRowCard
+    - kpi
+    category_label:
+        bold: singleVisual.objects.categoryLabels.properties.bold
+        bold_value: singleVisual.objects.categoryLabels.properties.bold.expr.Literal.Value
+        color: singleVisual.objects.categoryLabels.properties.color
+        color_Percent: singleVisual.objects.categoryLabels.properties.color.solid.color.expr.ThemeDataColor.Percent
+        color_value: singleVisual.objects.categoryLabels.properties.color.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.objects.categoryLabels.properties.fontFamily
+        font_family_value: singleVisual.objects.labels.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.objects.categoryLabels.properties.fontSize
+        font_size_value: singleVisual.objects.labels.properties.fontSize.expr.Literal.Value
+        italic: singleVisual.objects.categoryLabels.properties.italic
+        italic_value: singleVisual.objects.categoryLabels.properties.italic.expr.Literal.Value
+        label_path: singleVisual.objects.categoryLabels
+        label_properties: singleVisual.objects.categoryLabels.properties
+        label_show: singleVisual.objects.categoryLabels.properties.show.expr.Literal.Value
+        underline: singleVisual.objects.categoryLabels.properties.underline
+        underline_value: singleVisual.objects.categoryLabels.properties.underline.expr.Literal.Value
+    class: Card
+    column: singleVisual.projections.Values.queryRef
+    goal: singleVisual.projections.Goal.queryRef
+    indicator: singleVisual.projections.Indicator.queryRef
+    label:
+        bold: singleVisual.objects.labels.properties.bold
+        bold_value: singleVisual.objects.labels.properties.bold.expr.Literal.Value
+        color: singleVisual.objects.labels.properties.color
+        color_Percent: singleVisual.objects.labels.properties.color.solid.color.expr.ThemeDataColor.Percent
+        color_value: singleVisual.objects.labels.properties.color.solid.color.expr.ThemeDataColor.ColorId
+        decimal: singleVisual.objects.labels.properties.labelPrecision
+        decimal_value: singleVisual.objects.labels.properties.labelPrecision.expr.Literal.Value
+        display_unit: singleVisual.objects.labels.properties.labelDisplayUnits
+        display_unit_value: singleVisual.objects.labels.properties.labelDisplayUnits.expr.Literal.Value
+        font_family: singleVisual.objects.labels.properties.fontFamily
+        font_family_value: singleVisual.objects.labels.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.objects.labels.properties.fontSize
+        font_size_value: singleVisual.objects.labels.properties.fontSize.expr.Literal.Value
+        italic: singleVisual.objects.labels.properties.italic
+        italic_value: singleVisual.objects.labels.properties.italic.expr.Literal.Value
+        label_path: singleVisual.objects.labels
+        label_properties: singleVisual.objects.labels.properties
+        label_show: singleVisual.objects.categoryLabels.properties.show.expr.Literal.Value
+        underline: singleVisual.objects.labels.properties.underline
+        underline_value: singleVisual.objects.labels.properties.underline.expr.Literal.Value
+    max_value: singleVisual.projections.MaxValue.queryRef
+    min_value: singleVisual.projections.MinValue.queryRef
+    position: layouts.position
+    target_value: singleVisual.projections.TargetValue.queryRef
+    title:
+        alignment: singleVisual.vcObjects.title.properties.alignment
+        alignment_value: singleVisual.vcObjects.title.properties.alignment.expr.Literal.Value
+        background: singleVisual.vcObjects.title.properties.fontColor
+        background_percent: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.Percent
+        background_value: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.ColorId
+        bold: singleVisual.vcObjects.title.properties.bold
+        bold_value: singleVisual.vcObjects.title.properties.bold.expr.Literal.Value
+        font_color: singleVisual.vcObjects.title.properties.fontColor
+        font_color_percent: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+        font_color_value: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.vcObjects.title.properties.fontFamily
+        font_family_value: singleVisual.vcObjects.title.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.vcObjects.title.properties.fontSize
+        font_size_value: singleVisual.vcObjects.title.properties.fontSize.expr.Literal.Value
+        heading: singleVisual.vcObjects.title.properties.heading
+        heading_value: singleVisual.vcObjects.title.properties.heading.expr.Literal.Value
+        italic: singleVisual.vcObjects.title.properties.italic
+        italic_value: singleVisual.vcObjects.title.properties.italic.expr.Literal.Value
+        title_path: singleVisual.vcObjects.title
+        title_properties: singleVisual.vcObjects.title.properties
+        title_show: singleVisual.vcObjects.title.properties.show.expr.Literal.Value
+        title_text: singleVisual.vcObjects.title.properties.text.expr.Literal.Value
+        underline: singleVisual.vcObjects.title.properties.underline
+        underline_value: singleVisual.vcObjects.title.properties.underline.expr.Literal.Value
+    type: card
+    vcObjects: singleVisual.vcObjects
+    visual_heading: selects.displayName
+    y: singleVisual.projections.Y.queryRef
+cardVisual:
+    Data: singleVisual.projections.Data.queryRef
+    Tooltips: singleVisual.projections.Tooltips.queryRef
+    class: cardVisual
+    position: layouts.position
+    
+chart:
+    Category: singleVisual.projections.Category.queryRef
+    Details: singleVisual.projections.Details.queryRef
+    Group: singleVisual.projections.Group.queryRef
+    Play: singleVisual.projections.Play.queryRef
+    Size: singleVisual.projections.Size.queryRef
+    Values: singleVisual.projections.Values.queryRef
+    X: singleVisual.projections.X.queryRef
+    Y: singleVisual.projections.Y.queryRef
+    break_down: singleVisual.projections.Breakdown.queryRef
+    charts:
+    - columnChart
+    - barChart
+    - clusteredBarChart
+    - clusteredColumnChart
+    - hundredPercentStackedBarChart
+    - hundredPercentStackedColumnChart
+    - lineChart
+    - areaChart
+    - stackedAreaChart
+    - lineStackedColumnComboChart
+    - lineClusteredColumnComboChart
+    - waterfallChart
+    - funnel
+    - scatterChart
+    - pieChart
+    - donutChart
+    - treemap
+    - ribbonChart
+    class: Chart
+    legend: singleVisual.projections.Series.queryRef
+    line_charts:
+    - lineChart
+    - areaChart
+    - lineStackedColumnComboChart
+    - lineClusteredColumnComboChart
+    - waterfallChart
+    multiples: singleVisual.projections.Rows.queryRef
+    pie_charts:
+    - pieChart
+    - donutChart
+    position: layouts.position
+    secondary_line: singleVisual.projections.Y2.queryRef
+    title:
+        alignment: singleVisual.vcObjects.title.properties.alignment
+        alignment_value: singleVisual.vcObjects.title.properties.alignment.expr.Literal.Value
+        background: singleVisual.vcObjects.title.properties.fontColor
+        background_percent: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.Percent
+        background_value: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.ColorId
+        bold: singleVisual.vcObjects.title.properties.bold
+        bold_value: singleVisual.vcObjects.title.properties.bold.expr.Literal.Value
+        display_name: selects.displayName
+        font_color: singleVisual.vcObjects.title.properties.fontColor
+        font_color_percent: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+        font_color_value: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.vcObjects.title.properties.fontFamily
+        font_family_value: singleVisual.vcObjects.title.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.vcObjects.title.properties.fontSize
+        font_size_value: singleVisual.vcObjects.title.properties.fontSize.expr.Literal.Value
+        heading: singleVisual.vcObjects.title.properties.heading
+        heading_value: singleVisual.vcObjects.title.properties.heading.expr.Literal.Value
+        italic: singleVisual.vcObjects.title.properties.italic
+        italic_value: singleVisual.vcObjects.title.properties.italic.expr.Literal.Value
+        title_path: singleVisual.vcObjects.title
+        title_properties: singleVisual.vcObjects.title.properties
+        title_show: singleVisual.vcObjects.title.properties.show.expr.Literal.Value
+        title_text: singleVisual.vcObjects.title.properties.text.expr.Literal.Value
+        underline: singleVisual.vcObjects.title.properties.underline
+        underline_value: singleVisual.vcObjects.title.properties.underline.expr.Literal.Value
+    treemap:
+    - treemap
+    vcObjects: singleVisual.vcObjects
+    x_style:
+        axisStyle: singleVisual.objects.valueAxis.properties.axisStyle.expr.Literal.Value
+        axis_end: singleVisual.objects.valueAxis.properties.end.expr.Literal.Value
+        axis_start: singleVisual.objects.valueAxis.properties.start.expr.Literal.Value
+        bold: singleVisual.objects.valueAxis.properties.bold.expr.Literal.Value
+        decimals: singleVisual.objects.valueAxis.properties.labelPrecision.expr.Literal.Value
+        display_units: singleVisual.objects.valueAxis.properties.labelDisplayUnits.expr.Literal.Value
+        fontFamily: singleVisual.objects.valueAxis.properties.fontFamily.expr.Literal.Value
+        fontSize: singleVisual.objects.valueAxis.properties.fontSize.expr.Literal.Value
+        italic: singleVisual.objects.valueAxis.properties.italic.expr.Literal.Value
+        label_color_percent: singleVisual.objects.valueAxis.properties.labelColor.solid.color.expr.ThemeDataColor.Percent
+        label_color_value: singleVisual.objects.valueAxis.properties.labelColor.solid.color.expr.ThemeDataColor.ColorId
+        path: singleVisual.objects.valueAxis
+        properties: singleVisual.objects.valueAxis.properties
+        titleBold: singleVisual.objects.valueAxis.properties.titleBold.expr.Literal.Value
+        titleFontFamily: singleVisual.objects.valueAxis.properties.titleFontFamily.expr.Literal.Value
+        titleItalic: singleVisual.objects.valueAxis.properties.titleItalic.expr.Literal.Value
+        titleUnderline: singleVisual.objects.valueAxis.properties.titleUnderline.expr.Literal.Value
+        title_color_percent: singleVisual.objects.valueAxis.properties.titleColor.solid.color.expr.ThemeDataColor.Percent
+        title_color_value: singleVisual.objects.valueAxis.properties.titleColor.solid.color.expr.ThemeDataColor.ColorId
+        title_text: singleVisual.objects.valueAxis.properties.titleText.expr.Literal.Value
+        underline: singleVisual.objects.valueAxis.properties.underline.expr.Literal.Value
+    y_style:
+        bold: singleVisual.objects.categoryAxis.properties.bold.expr.Literal.Value
+        fontFamily: singleVisual.objects.categoryAxis.properties.fontFamily.expr.Literal.Value
+        fontSize: singleVisual.objects.categoryAxis.properties.fontSize.expr.Literal.Value
+        italic: singleVisual.objects.categoryAxis.properties.italic.expr.Literal.Value
+        label_color_percent: singleVisual.objects.categoryAxis.properties.labelColor.solid.color.expr.ThemeDataColor.Percent
+        label_color_value: singleVisual.objects.categoryAxis.properties.labelColor.solid.color.expr.ThemeDataColor.ColorId
+        maxMarginFactor: singleVisual.objects.categoryAxis.properties.maxMarginFactor.expr.Literal.Value
+        path: singleVisual.objects.categoryAxis
+        properties: singleVisual.objects.categoryAxis.properties
+        switchAxisPosition: singleVisual.objects.categoryAxis.properties.switchAxisPosition.expr.Literal.Value
+        titleBold: singleVisual.objects.categoryAxis.properties.titleBold.expr.Literal.Value
+        titleFontFamily: singleVisual.objects.categoryAxis.properties.titleFontFamily.expr.Literal.Value
+        titleItalic: singleVisual.objects.categoryAxis.properties.titleItalic.expr.Literal.Value
+        titleUnderline: singleVisual.objects.categoryAxis.properties.titleUnderline.expr.Literal.Value
+        title_color_percent: singleVisual.objects.categoryAxis.properties.titleColor.solid.color.expr.ThemeDataColor.Percent
+        title_color_value: singleVisual.objects.categoryAxis.properties.titleColor.solid.color.expr.ThemeDataColor.ColorId
+        title_text: singleVisual.objects.categoryAxis.properties.titleText.expr.Literal.Value
+        underline: singleVisual.objects.categoryAxis.properties.underline.expr.Literal.Value
+
+decompositionTreeVisual:
+    Analyze: singleVisual.projections.Analyze.queryRef
+    ExplainBy: singleVisual.projections.ExplainBy.queryRef
+    Tooltips: singleVisual.projections.Tooltips.queryRef
+    class: decompositionTreeVisual
+    position: layouts.position
+esriVisual:
+    Color: singleVisual.projections.Color.queryRef
+    Latitude: singleVisual.projections.Latitude.queryRef
+    Location: singleVisual.projections.Location.queryRef
+    Longitude: singleVisual.projections.Longitude.queryRef
+    Size: singleVisual.projections.Size.queryRef
+    Time: singleVisual.projections.Time.queryRef
+    Tooltips: singleVisual.projections.Tooltips.queryRef
+    class: esriVisual
+    position: layouts.position
+filters:
+    visual:
+        Advanced:
+            column: expression.Column.Property
+            entity: expression.Column.Expression.SourceRef.Entity
+            logic: filter.Where.Condition
+        Categorical:
+            column: expression.Column.Property
+            entity: expression.Column.Expression.SourceRef.Entity
+            single_select: objects.general.properties.requireSingleSelect
+            single_select_value: objects.general.properties.requireSingleSelect.expr.Literal.Value
+            values: filter.Where.Condition.In.Values.Literal.Value
+        TopN:
+            column1: expression.Column.Property
+            column2: filter.From.Expression.Subquery.Query.OrderBy.Expression.Aggregation.Expression.Column.Property
+            direction: filter.From.Expression.Subquery.Query.OrderBy.Direction
+            entity: expression.Column.Expression.SourceRef.Entity
+            value: filter.From.Expression.Subquery.Query.Top
+        path: data.filters
+        type: type
+general:
+    altText: singleVisual.vcObjects.general.properties.altText
+    altText_value: singleVisual.vcObjects.general.properties.altText.expr.Literal.Value
+    background:
+        background_percent: singleVisual.vcObjects.background.properties.color.solid.color.expr.ThemeDataColor.Percent
+        background_transparency: singleVisual.vcObjects.background.properties.transparency.expr.Literal.Value
+        background_value: singleVisual.vcObjects.background.properties.color.solid.color.expr.ThemeDataColor.ColorId
+        path: singleVisual.vcObjects.background
+        properties: singleVisual.vcObjects.background.properties
+    border:
+        border_show: singleVisual.vcObjects.border.properties.show.expr.Literal.Value
+        color: singleVisual.objects.border.properties.color
+        color_percent: singleVisual.vcObjects.border.properties.color.solid.color.expr.ThemeDataColor.Percent
+        color_value: singleVisual.vcObjects.border.properties.color.solid.color.expr.ThemeDataColor.ColorId
+        path: singleVisual.vcObjects.border
+        properties: singleVisual.vcObjects.border.properties
+        radius: singleVisual.vcObjects.border.properties.radius.expr.Literal.Value
+    dropShadow:
+        color: singleVisual.vcObjects.dropShadow.properties.color
+        color_percent: singleVisual.vcObjects.dropShadow.properties.color.solid.color.expr.ThemeDataColor.Percent
+        color_value: singleVisual.vcObjects.dropShadow.properties.color.solid.color.expr.ThemeDataColor.ColorId
+        dropShadow_show: singleVisual.vcObjects.dropShadow.properties.show.expr.Literal.Value
+        path: singleVisual.vcObjects.dropShadow
+        position: singleVisual.vcObjects.dropShadow.properties.position
+        position_value: singleVisual.vcObjects.dropShadow.properties.position.expr.Literal.Value
+        preset: singleVisual.vcObjects.dropShadow.properties.preset
+        preset_value: singleVisual.vcObjects.dropShadow.properties.preset.expr.Literal.Value
+        properties: singleVisual.vcObjects.dropShadow.properties
+    maintain_layer_order: singleVisual.vcObjects.general.properties.keepLayerOrder.expr.Literal.Value
+    path: singleVisual.vcObjects.general
+    properties: singleVisual.vcObjects.general.properties
+image:
+    class: Image
+    image_scaling: singleVisual.objects.imageScaling.properties.imageScalingType.expr.Literal.Value
+    image_url: singleVisual.objects.general.properties.imageUrl.expr.ResourcePackageItem.ItemName
+    page_navigate_value: singleVisual.vcObjects.visualLink.properties.navigationSection.expr.Literal.Value
+    position: layouts.position
+    type: image
+    vcObjects: singleVisual.vcObjects
+    visual_link: singleVisual.vcObjects.visualLink
+    visual_link_show: singleVisual.vcObjects.visualLink.properties.show.expr.Literal.Value
+    visual_link_type: singleVisual.vcObjects.visualLink.properties.type.expr.Literal.Value
+    web_url: singleVisual.vcObjects.visualLink.properties.webUrl.expr.Literal.Value
+keyDriversVisual:
+    Details: singleVisual.projections.Details.queryRef
+    ExplainBy: singleVisual.projections.ExplainBy.queryRef
+    Target: singleVisual.projections.Target.queryRef
+    class: keyDriversVisual
+    position: layouts.position
+map:
+    category: singleVisual.projections.Category.queryRef
+    class: Map
+    legend: singleVisual.projections.Series.queryRef
+    maps:
+    - map
+    - filledMap
+    - shapeMap
+    - azureMap
+    position: layouts.position
+    size: singleVisual.projections.Size.queryRef
+    title:
+        alignment: singleVisual.vcObjects.title.properties.alignment
+        alignment_value: singleVisual.vcObjects.title.properties.alignment.expr.Literal.Value
+        background: singleVisual.vcObjects.title.properties.fontColor
+        background_percent: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.Percent
+        background_value: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.ColorId
+        bold: singleVisual.vcObjects.title.properties.bold
+        bold_value: singleVisual.vcObjects.title.properties.bold.expr.Literal.Value
+        display_name: selects.displayName
+        font_color: singleVisual.vcObjects.title.properties.fontColor
+        font_color_percent: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+        font_color_value: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.vcObjects.title.properties.fontFamily
+        font_family_value: singleVisual.vcObjects.title.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.vcObjects.title.properties.fontSize
+        font_size_value: singleVisual.vcObjects.title.properties.fontSize.expr.Literal.Value
+        heading: singleVisual.vcObjects.title.properties.heading
+        heading_value: singleVisual.vcObjects.title.properties.heading.expr.Literal.Value
+        italic: singleVisual.vcObjects.title.properties.italic
+        italic_value: singleVisual.vcObjects.title.properties.italic.expr.Literal.Value
+        title_path: singleVisual.vcObjects.title
+        title_properties: singleVisual.vcObjects.title.properties
+        title_show: singleVisual.vcObjects.title.properties.show.expr.Literal.Value
+        title_text: singleVisual.vcObjects.title.properties.text.expr.Literal.Value
+        underline: singleVisual.vcObjects.title.properties.underline
+        underline_value: singleVisual.vcObjects.title.properties.underline.expr.Literal.Value
+    value: singleVisual.projections.Value.queryRef
+    vcObjects: singleVisual.vcObjects
+    x: singleVisual.projections.X.queryRef
+    y: singleVisual.projections.Y.queryRef
+navigator:
+    class: Navigator
+    navigators:
+    - bookmarkNavigator
+    - pageNavigator
+    position: layouts.position
+    type: navigator
+    vcObjects: singleVisual.vcObjects
+others:
+- FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A
+- PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A
+- esriVisual
+- advancedSlicerVisual
+- cardVisual
+- rdlVisual
+- scorecard
+- qnaVisual
+- decompositionTreeVisual
+- keyDriversVisual
+- pythonVisual
+- textbox
+- image
+- actionButton
+- pageNavigator
+- bookmarkNavigator
+- shape
+- basicShape
+- CustomVisual
+- scriptVisual
+- singleVisualGroup
+payPalKPIDonutChart55A431AB15A540ED924ACD72ED8D259F:
+    circleProperties_amendmentSize: singleVisual.objects.circleProperties.properties.amendmentSize.expr.Literal.Value
+    circleProperties_highColor: singleVisual.objects.circleProperties.properties.highColor.solid.color.expr.Literal.Value
+    circleProperties_innerColor_id: singleVisual.objects.circleProperties.properties.innerColor.solid.color.expr.ThemeDataColor.ColorId
+    circleProperties_innerColor_id_per: singleVisual.objects.circleProperties.properties.innerColor.solid.color.expr.ThemeDataColor.Percent
+    circleProperties_innerLineWidth: singleVisual.objects.circleProperties.properties.innerLineWidth.expr.Literal.Value
+    circleProperties_lowColor: singleVisual.objects.circleProperties.properties.lowColor.solid.color.expr.Literal.Value
+    circleProperties_mediumColor: singleVisual.objects.circleProperties.properties.mediumColor.solid.color.expr.Literal.Value
+    circleProperties_outerLineWidth: singleVisual.objects.circleProperties.properties.outerLineWidth.expr.Literal.Value
+    column: singleVisual.projections.Values.queryRef
+    position: layouts.position
+pythonVisual:
+    column: singleVisual.projections.Values.queryRef
+    position: layouts.position
+    script_provider: singleVisual.objects.script.properties.provider.expr.Literal.Value
+    script_source: singleVisual.objects.script.properties.source.expr.Literal.Value
+qnaVisual:
+    class: qnaVisual
+    position: layouts.position
+ratingsvisual001:
+    column: singleVisual.projections.Values.queryRef
+    labels_fontSize: singleVisual.objects.labels.properties.fontSize.expr.Literal.Value
+    labels_percentageLabel: singleVisual.objects.labels.properties.percentageLabel.expr.Literal.Value
+    labels_totalStarsLabel: singleVisual.objects.labels.properties.totalStarsLabel.expr.Literal.Value
+    position: layouts.position
+    rating_shadow: singleVisual.objects.rating.properties.shadow.expr.Literal.Value
+rdlVisual:
+    class: rdlVisual
+    parameter: singleVisual.projections.parameterValues.queryRef
+    position: layouts.position
+scorecard:
+    class: scoreCard
+    position: layouts.position
+scriptVisual:
+    class: scriptVisual
+    column: singleVisual.projections.Values.queryRef
+    position: layouts.position
+    provider: singleVisual.objects.script.properties.provider.expr.Literal.Value
+    scripts: singleVisual.objects.script.properties.source.expr.Literal.Value
+shape:
+    border_color: singleVisual.objects.outline.properties.lineColor.solid.color.expr.ThemeDataColor.ColorId
+    border_color__per: singleVisual.objects.outline.properties.lineColor.solid.color.expr.ThemeDataColor.Percent
+    border_transparency: singleVisual.objects.outline.properties.transparency.expr.Literal.Value
+    border_weight: singleVisual.objects.outline.properties.weight.expr.Literal.Value
+    class: Shape
+    fill_color: singleVisual.objects.fill.properties.fillColor.solid.color.expr.ThemeDataColor.ColorId
+    fill_color_per: singleVisual.objects.fill.properties.fillColor.solid.color.expr.ThemeDataColor.Percent
+    fill_transparency: singleVisual.objects.fill.properties.transparency.expr.Literal.Value
+    glow_color: singleVisual.objects.glow.properties.color.solid.color.expr.ThemeDataColor.ColorId
+    glow_color_per: singleVisual.objects.glow.properties.color.solid.color.expr.ThemeDataColor.Percent
+    glow_shadowBlur: singleVisual.objects.glow.properties.shadowBlur.expr.Literal.Value
+    glow_show: singleVisual.objects.glow.properties.show.expr.Literal.Value
+    glow_transparency: singleVisual.objects.glow.properties.transparency.expr.Literal.Value
+    page_navigate_value: singleVisual.vcObjects.visualLink.properties.navigationSection.expr.Literal.Value
+    position: layouts.position
+    rotation_all: singleVisual.objects.rotation.properties.angle.expr.Literal.Value
+    rotation_shape: singleVisual.objects.rotation.properties.shapeAngle.expr.Literal.Value
+    rotation_text: singleVisual.objects.rotation.properties.textAngle.expr.Literal.Value
+    shadow_color: singleVisual.objects.shadow.properties.color.solid.color.expr.ThemeDataColor.ColorId
+    shadow_color_per: singleVisual.objects.shadow.properties.color.solid.color.expr.ThemeDataColor.Percent
+    shadow_shadowBlur: singleVisual.objects.shadow.properties.shadowBlur.expr.Literal.Value
+    shadow_shadowPositionPreset: singleVisual.objects.shadow.properties.shadowPositionPreset.expr.Literal.Value
+    shadow_show: singleVisual.objects.shadow.properties.show.expr.Literal.Value
+    shadow_transparency: singleVisual.objects.shadow.properties.transparency.expr.Literal.Value
+    shape: singleVisual.objects.shape.properties.tileShape.expr.Literal.Value
+    text_bottomMargin: singleVisual.objects.text.properties.bottomMargin.expr.Literal.Value
+    text_font_bold: singleVisual.objects.text.properties.bold.expr.Literal.Value
+    text_font_color: singleVisual.objects.text.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+    text_font_color_per: singleVisual.objects.text.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+    text_font_family: singleVisual.objects.text.properties.fontFamily.expr.Literal.Value
+    text_font_italic: singleVisual.objects.text.properties.italic.expr.Literal.Value
+    text_font_size: singleVisual.objects.text.properties.fontSize.expr.Literal.Value
+    text_font_underline: singleVisual.objects.text.properties.underline.expr.Literal.Value
+    text_horizontalAlignment: singleVisual.objects.text.properties.horizontalAlignment.expr.Literal.Value
+    text_leftMargin: singleVisual.objects.text.properties.leftMargin.expr.Literal.Value
+    text_rightMargin: singleVisual.objects.text.properties.rightMargin.expr.Literal.Value
+    text_show: singleVisual.objects.text.properties.show.expr.Literal.Value
+    text_topMargin: singleVisual.objects.text.properties.topMargin.expr.Literal.Value
+    text_value: singleVisual.objects.text.properties.text.expr.Literal.Value
+    text_verticalAlignment: singleVisual.objects.text.properties.verticalAlignment.expr.Literal.Value
+    type: shape
+    vcObjects: singleVisual.vcObjects
+    visual_link: singleVisual.vcObjects.visualLink
+    visual_link_show: singleVisual.vcObjects.visualLink.properties.show.expr.Literal.Value
+    visual_link_type: singleVisual.vcObjects.visualLink.properties.type.expr.Literal.Value
+    web_url: singleVisual.vcObjects.visualLink.properties.webUrl.expr.Literal.Value
+singleVisualGroup:
+    class: singleVisualGroup
+    name: singleVisualGroup.displayName
+    position: layouts.position
+slicer:
+    class: Slicer
+    column: singleVisual.projections.Values.queryRef
+    position: layouts.position
+    title:
+        alignment: singleVisual.vcObjects.title.properties.alignment
+        alignment_value: singleVisual.vcObjects.title.properties.alignment.expr.Literal.Value
+        background: singleVisual.vcObjects.title.properties.fontColor
+        background_percent: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.Percent
+        background_value: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.ColorId
+        bold: singleVisual.vcObjects.title.properties.bold
+        bold_value: singleVisual.vcObjects.title.properties.bold.expr.Literal.Value
+        font_color: singleVisual.vcObjects.title.properties.fontColor
+        font_color_percent: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+        font_color_value: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.vcObjects.title.properties.fontFamily
+        font_family_value: singleVisual.vcObjects.title.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.vcObjects.title.properties.fontSize
+        font_size_value: singleVisual.vcObjects.title.properties.fontSize.expr.Literal.Value
+        heading: singleVisual.vcObjects.title.properties.heading
+        heading_value: singleVisual.vcObjects.title.properties.heading.expr.Literal.Value
+        italic: singleVisual.vcObjects.title.properties.italic
+        italic_value: singleVisual.vcObjects.title.properties.italic.expr.Literal.Value
+        title_path: singleVisual.vcObjects.title
+        title_properties: singleVisual.vcObjects.title.properties
+        title_show: singleVisual.vcObjects.title.properties.show.expr.Literal.Value
+        title_text: singleVisual.vcObjects.title.properties.text.expr.Literal.Value
+        underline: singleVisual.vcObjects.title.properties.underline
+        underline_value: singleVisual.vcObjects.title.properties.underline.expr.Literal.Value
+    type: slicer
+    vcObjects: singleVisual.vcObjects
+    visual_heading: selects.displayName
+table:
+    class: Table
+    column: singleVisual.projections.Values.queryRef
+    position: layouts.position
+    row: singleVisual.projections.Columns.queryRef
+    tables:
+    - tableEx
+    - pivotTable
+    title:
+        alignment: singleVisual.vcObjects.title.properties.alignment
+        alignment_value: singleVisual.vcObjects.title.properties.alignment.expr.Literal.Value
+        background: singleVisual.vcObjects.title.properties.fontColor
+        background_percent: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.Percent
+        background_value: singleVisual.vcObjects.title.properties.background.solid.color.expr.ThemeDataColor.ColorId
+        bold: singleVisual.vcObjects.title.properties.bold
+        bold_value: singleVisual.vcObjects.title.properties.bold.expr.Literal.Value
+        font_color: singleVisual.vcObjects.title.properties.fontColor
+        font_color_percent: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.Percent
+        font_color_value: singleVisual.vcObjects.title.properties.fontColor.solid.color.expr.ThemeDataColor.ColorId
+        font_family: singleVisual.vcObjects.title.properties.fontFamily
+        font_family_value: singleVisual.vcObjects.title.properties.fontFamily.expr.Literal.Value
+        font_size: singleVisual.vcObjects.title.properties.fontSize
+        font_size_value: singleVisual.vcObjects.title.properties.fontSize.expr.Literal.Value
+        heading: singleVisual.vcObjects.title.properties.heading
+        heading_value: singleVisual.vcObjects.title.properties.heading.expr.Literal.Value
+        italic: singleVisual.vcObjects.title.properties.italic
+        italic_value: singleVisual.vcObjects.title.properties.italic.expr.Literal.Value
+        title_path: singleVisual.vcObjects.title
+        title_properties: singleVisual.vcObjects.title.properties
+        title_show: singleVisual.vcObjects.title.properties.show.expr.Literal.Value
+        title_text: singleVisual.vcObjects.title.properties.text.expr.Literal.Value
+        underline: singleVisual.vcObjects.title.properties.underline
+        underline_value: singleVisual.vcObjects.title.properties.underline.expr.Literal.Value
+    type: table
+    value: singleVisual.projections.Rows.queryRef
+    vcObjects: singleVisual.vcObjects
+    visual_heading: selects.displayName
+textbox:
+    bottom: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.bottom
+    class: Textbox
+    color: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.color
+    fontFamily: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.fontFamily
+    fontSize: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.fontSize
+    fontStyle: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.fontStyle
+    fontWeight: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.fontWeight
+    horizontalTextAlignment: singleVisual.objects.general.properties.paragraphs.horizontalTextAlignment
+    lineHeight: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.lineHeight
+    position: layouts.position
+    scriptType: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.scriptType
+    text: singleVisual.objects.general.properties.paragraphs.textRuns.value
+    textDecoration: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.textDecoration
+    text_position: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.position
+    text_style: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle
+    type: textbox
+    url: singleVisual.objects.general.properties.paragraphs.textRuns.url
+    vcObjects: singleVisual.vcObjects
+    verticalAlign: singleVisual.objects.general.properties.paragraphs.textRuns.textStyle.verticalAlign
+version: 2312
+visual:
+    type: singleVisual.visualType
+wallpaper:
+    class: wallpaper
+    wallpaper_color: objects.outspace.properties.color.solid.color.expr.ThemeDataColor.ColorId
+    wallpaper_color_percent: objects.outspace.properties.color.solid.color.expr.ThemeDataColor.Percent
+    wallpaper_image_name: objects.outspace.properties.image.image.name.expr.Literal.Value
+    wallpaper_image_scaling: objects.outspace.properties.image.image.scaling.expr.Literal.Value
+    wallpaper_image_url: objects.outspace.properties.image.image.url.expr.ResourcePackageItem.ItemName
+    wallpaper_transparency: objects.outspace.properties.transparency.expr.Literal.Value

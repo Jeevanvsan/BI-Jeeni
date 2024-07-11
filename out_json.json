@@ -1,0 +1,399 @@
+{
+    "node": "s2",
+    "relation": "file",
+    "sub_nodes": [
+        [
+            {
+                "node": "Page 1",
+                "relation": "report",
+                "parent": "s2",
+                "sub_nodes": [
+                    {
+                        "node": "scriptVisual0",
+                        "relation": "script_visual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sheet1.Size",
+                                "relation": "column",
+                                "parent": "scriptVisual0",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.Size"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "pythonVisual1",
+                        "relation": "python_visual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sheet1.Size",
+                                "relation": "column",
+                                "parent": "pythonVisual1",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.Size"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sum(Sheet1.P F)",
+                                "relation": "column",
+                                "parent": "pythonVisual1",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.P F)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "keyDriversVisual2",
+                        "relation": "key_drivers_visual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sheet1.D.Rate",
+                                "relation": "column",
+                                "parent": "keyDriversVisual2",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.D.Rate"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sum(Sheet1.MRP)",
+                                "relation": "column",
+                                "parent": "keyDriversVisual2",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.MRP)"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sheet1.P F",
+                                "relation": "column",
+                                "parent": "keyDriversVisual2",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.P F"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "decompositionTreeVisual3",
+                        "relation": "decomposition_tree_visual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sum(Sheet1.AM .Rate)",
+                                "relation": "column",
+                                "parent": "decompositionTreeVisual3",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.AM .Rate)"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sheet1.D.Rate",
+                                "relation": "column",
+                                "parent": "decompositionTreeVisual3",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.D.Rate"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sum(Sheet1.MRP)",
+                                "relation": "column",
+                                "parent": "decompositionTreeVisual3",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.MRP)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "qnaVisual4",
+                        "relation": "qna_visual",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "textbox5",
+                        "relation": "text_container",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "scorecard6",
+                        "relation": "score_card",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "rdlVisual7",
+                        "relation": "rdl_visual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sum(Sheet1.AM .Rate)",
+                                "relation": "column",
+                                "parent": "rdlVisual7",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.AM .Rate)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "cardVisual8",
+                        "relation": "card_visual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sum(Sheet1.MRP)",
+                                "relation": "column",
+                                "parent": "cardVisual8",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.MRP)"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Min(Sheet1.Size)",
+                                "relation": "column",
+                                "parent": "cardVisual8",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Min(Sheet1.Size)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "advancedSlicerVisual9",
+                        "relation": "advanced_slicerVisual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sheet1.AM .Rate",
+                                "relation": "column",
+                                "parent": "advancedSlicerVisual9",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.AM .Rate"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "esriVisual10",
+                        "relation": "esri_visual",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sheet1.AM .Rate",
+                                "relation": "column",
+                                "parent": "esriVisual10",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.AM .Rate"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Avg(Sheet1.D.Rate)",
+                                "relation": "column",
+                                "parent": "esriVisual10",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Avg(Sheet1.D.Rate)"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Avg(Sheet1.MRP)",
+                                "relation": "column",
+                                "parent": "esriVisual10",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Avg(Sheet1.MRP)"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sum(Sheet1.P F)",
+                                "relation": "column",
+                                "parent": "esriVisual10",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.P F)"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sheet1.Size",
+                                "relation": "column",
+                                "parent": "esriVisual10",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.Size"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sheet1.AM .Rate",
+                                "relation": "column",
+                                "parent": "esriVisual10",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sheet1.AM .Rate"
+                                    }
+                                ]
+                            },
+                            {
+                                "node": "Sum(Sheet1.AM .Rate)",
+                                "relation": "column",
+                                "parent": "esriVisual10",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.AM .Rate)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A11",
+                        "relation": "Power_apps",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sum(Sheet1.AM .Rate)",
+                                "relation": "column",
+                                "parent": "PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A11",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.AM .Rate)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A12",
+                        "relation": "Power_apps_Automated",
+                        "parent": "Page 1",
+                        "sub_nodes": [
+                            {
+                                "node": "Sum(Sheet1.AM .Rate)",
+                                "relation": "column",
+                                "parent": "FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A12",
+                                "sub_nodes": [
+                                    {
+                                        "node": "Sheet1",
+                                        "relation": "source",
+                                        "parent": "Sum(Sheet1.AM .Rate)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node": "actionButton13",
+                        "relation": "button_container",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "actionButton14",
+                        "relation": "button_container",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "actionButton15",
+                        "relation": "button_container",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "actionButton16",
+                        "relation": "button_container",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "shape17",
+                        "relation": "shape_container",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "shape18",
+                        "relation": "shape_container",
+                        "parent": "Page 1"
+                    },
+                    {
+                        "node": "shape19",
+                        "relation": "shape_container",
+                        "parent": "Page 1"
+                    }
+                ]
+            }
+        ]
+    ]
+}

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPORTS</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="[[ url_for('static', filename='img/favicon.ico') ]]" type="image/x-icon">
+    <link rel="stylesheet" href="[[url_for('static',filename='css/report.css')]]">
+
+    
+</head>
+<body>
+<div class="top-container">
+    <div class="head">
+        <a href="/preview">
+        <img src="[[url_for('static',filename='img/logo_beta.png')]]" alt="logo">
+        </a>
+        <a href="reports.html">
+        <div class="button-container">
+            <a href="/" class="extract-button">Extract New</a>
+        </div>
+        </a>
+    </div>
+    <h1>FILENAME : {{ filename }}</h1>
+    <ul class="horizontal-list">
+        {% for report in reports %}
+        <a href="page/{{filename}}/{{report}}">
+            <li class = 'one'>
+                <img src="[[url_for('static',filename='img/report_.png')]]" alt="report">
+                <p>{{ report }}</p>
+            </li>
+        </a>
+
+        {% endfor %}
+        <a href="page/{{filename}}/schema">
+
+        <li class = 'one'>
+            <div >
+                <img src="[[url_for('static',filename='img/schema.png')]]" alt="schema">
+                <p>schema</p>
+            </div>
+        </li>
+        </a>
+
+    </ul>
+</div>
+</body>
+</html>

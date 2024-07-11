@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=[[ url_for('static', filename='img/favicon.ico') ]] type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <title>Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #f0f0f0;   
+        }
+        td {
+            cursor: pointer;
+            font-size : 20px ;   
+
+          }
+          th, td {
+            padding: 15px;
+          }
+        .top-container img {
+            width: 350px; 
+        }
+        .top-container a {
+            text-decoration: none;
+        }
+        table{
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            width:50%;
+            text-align:center;
+            margin-bottom:30px
+          }
+        th {
+            background-color: #f77700;
+            color: white;
+          }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            color:#5e6168;
+
+        }
+        h2{
+            margin-left: 100px;
+            color:#5e6168;
+        }
+        #btn_submit{
+            width: 124px;
+            height: 56px;
+            color: white;
+            background-color: #182527;
+            border-radius: 15px;
+            border: 1px solid;
+            margin-top: 16px;
+        }
+        .checkbox{
+            height: 20px;
+            width: 20px;
+        }
+        .checkbox {
+            padding-left: 26px;
+            margin-bottom: 18px;
+            font-size: 22px;
+            user-select: none;
+        }
+        .flipswitch {
+            position: relative;
+            background: white;
+            width: 120px;
+            height: 40px;
+            -webkit-appearance: initial;
+            border-radius: 3px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            outline: none;
+            font-size: 14px;
+            font-family: Trebuchet, Arial, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid #ddd;
+          }
+          
+          .flipswitch:after {
+            position: absolute;
+            top: 5%;
+            display: block;
+            line-height: 32px;
+            width: 45%;
+            height: 90%;
+            background: #fff;
+            box-sizing: border-box;
+            text-align: center;
+            transition: all 0.3s ease-in 0s;
+            color: black;
+            border: #888 1px solid;
+            border-radius: 3px;
+          }
+          
+          .flipswitch:after {
+            left: 2%;
+            background : #FF7C07;
+            content: "OFF" ;
+          }
+          
+          .flipswitch:checked:after {
+            left: 53%;
+            background : #FFE507;
+            content: "ON";
+          }
+    </style>
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        [[ message ]]
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    <div class="top-container">
+        <a href="/preview"><img src=[[url_for('static',filename='img/logo_beta.png')]] alt="logo"></a>
+    </div>
+    <h1>Select files want to download</h1>
+    <form action="/download_val/[[file]]" method='POST'>
+        <div id="selectdown">
+            <table>
+                <tr>
+                    <td>Layout Images :</td>
+                    <td><input type="checkbox" name="down" id="img_l" value="L" class = "flipswitch">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Images used in report :</td>
+                    <td><input type="checkbox" name="down" id="img_r" value="R" class = "flipswitch">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Document :</td>
+                    <td><input type="checkbox" name="down" id="doc" value="D" class = "flipswitch">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Yaml file (config file) :</td>
+                    <td><input type="checkbox" name="down" id="yml" value="Y" class = "flipswitch">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Lineage graph :</td>
+                    <td><input type="checkbox" name="down" id="graph" value="G" class = "flipswitch">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Download" id="btn_submit" ></td>
+                </tr>
+                
+            </table>    
+        </div>
+    </form>
+    
+        
+</body>
+</html>

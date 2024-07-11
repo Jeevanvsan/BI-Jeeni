@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-container{
+    background-color: #f0f0f0;
+}
+
+.top-container img{
+    width: 200px; 
+}
+.head {
+    grid-column: span 3;
+    background-color: #f0f0f0;
+    padding: 10px;
+    height: 35px;
+    width: 100%;
+
+}
+.first-section,
+.second-section{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 15px;
+    margin-top: 30px;
+    margin-left: 40px; 
+    height: 220px;
+    width: 90%;
+    padding-left: 20px;
+}
+.one,
+.two,
+.three
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 3px rgb(203, 203, 203);
+    transition: opacity 0.1s ease 
+    
+}
+.first,
+.second,
+.third
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 3px rgb(203, 203, 203);
+    transition: opacity 0.1s ease 
+}
+.one img{
+    width: 150px;
+    height: 150;
+    margin-left: 90px;
+}
+.two img{
+    width: 150px;
+    height: 150;
+    margin-left: 90px;
+}
+.three img{
+    width: 150px;
+    height: 150;
+    margin-left: 90px;
+}
+.first img{
+    width: 150px;
+    height: 150;
+    margin-left: 90px;
+}
+.second img{
+    width: 150px;
+    height: 150;
+    margin-left: 90px;
+}
+.third img{
+    width: 150px;
+    height: 150;
+    margin-left: 90px;
+}
+.dark{
+    margin-left: 130px;
+    padding-bottom: 300px;
+}
+.button-container{
+    display: flex;
+    justify-content: end;
+    margin-right:30px;
+    margin-top: -25px;
+}
+.extract-button{
+    background-color: black;
+    color: azure;
+    border-radius: 20px;
+}
+.one:hover,
+.two:hover,
+.three:hover{
+    opacity: 0.6; 
+    cursor: pointer;
+}
+.first:hover,
+.second:hover,
+.third:hover{
+    opacity: 0.6; 
+    cursor: pointer;
+}
+

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILES</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="[[ url_for('static', filename='img/favicon.ico') ]]" type="image/x-icon">
+    <link rel="stylesheet" href="[[url_for('static',filename='css/report.css')]]">
+
+    
+</head>
+<style>
+     .over{
+        padding: 5px;
+        margin-left: 60px;
+        font-size: 17px;
+    }
+</style>
+<body>
+<div class="top-container">
+    <div class="head">
+        <a href="/preview">
+        <img src="[[url_for('static',filename='img/logo_beta.png')]]" alt="logo">
+        </a>
+        <a href="reports.html">
+        <div class="button-container">
+            <a href="/" class="extract-button">Extract New</a>
+        </div>
+        </a>
+    </div>
+    <h1>FILES</h1>
+    <a href="/overview_lineage">
+        <p class="over">Overview lineage</p>
+    </a>
+    <a href="/download-overview-doc">
+        <p class="over">Overview document</p>
+    </a>
+    <ul class="horizontal-list">
+        {% for file in files %}
+        <a href="/main/{{file}}">
+            <li class = 'one'>
+                <p>{{ file }}</p>
+            </li>
+        </a>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

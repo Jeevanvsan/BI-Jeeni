@@ -1,0 +1,13 @@
+# barchart
+general-
+legend
+gridline
+Zoom slider
+Bars
+Data labels
+Total labels
+plot area background
+
+#filter
+Advanced
+

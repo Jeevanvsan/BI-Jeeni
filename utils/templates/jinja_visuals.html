@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="[[ url_for('static', filename='img/favicon.ico') ]]" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="[[url_for('static',filename='css/report.css')]]">
+    
+    <style>
+        ul.horizontal-list {
+            width: 50%;
+            list-style-type: none;
+            margin: 50px 0 100px 0;
+            padding: 0;
+
+        }
+
+        /* Style for list items */
+        ul.horizontal-list li {
+            display: inline-block;
+            width: 20%; 
+            margin-right: 1%; 
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; 
+            padding: 10px;
+        }
+
+        ul.horizontal-list li:nth-child(4n) {
+            margin-right: 0;
+        }
+        #items{
+            display:flex;
+        }
+        a{
+            text-align:center;
+        }
+        #v_img{
+            width:50px
+        }
+        h2{
+            position: relative;
+            left:20%;
+            font-size:50px;
+        }
+    </style>
+    <title>VISUALS</title>
+</head>
+<body>
+    <div class="head">
+        <a href="/preview">
+        <img src="[[url_for('static',filename='img/logo_beta.png')]]" alt="logo">
+        </a>
+        <a href="reports.html">
+        <div class="button-container">
+            <a href="/" class="extract-button">Extract New</a>
+        </div>
+        </a>
+    </div>
+    <div class="common">
+    <h2 id="rpt" >{{report}}</h2>
+    <div id="items">
+    <img  src={{src}} alt="report layout" width="50%" height="600px">
+    <ul class="horizontal-list">
+        <a href="{{report}}/report-settings">
+
+            <li class = 'one' style="background:#c9ecf5">
+                <img src="[[url_for('static',filename='img/settings_icon.png')]]" alt="visual" id="v_img">
+                    <p>Report settings</p>
+            </li>
+        </a>
+        {% for reports in data %}
+            {% if report in reports['report_name']%}
+                {% for visuals in reports['visualContainers']%}
+                    {% for k,v in visuals.items()%}
+                    <a href="{{reports['report_name']}}/{{visuals[k]['visual_type']}}/{{visuals[k]['id']}}">
+
+                        <li class = 'one'>
+                            <img src="[[url_for('static',filename='img/{{visuals[k]['visual_type']}}.png')]]" alt="visual" id="v_img">
+                                <p>{{ visuals[k]['visual_type'] }}</p>
+                        </li>
+                    </a>
+
+                    {% endfor %}
+                {% endfor %} 
+            {% endif %}
+        {% endfor %}
+      
+        </ul>
+    </div>
+    </div>
+    
+</body>
+</html>

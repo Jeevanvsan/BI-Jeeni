@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="[[ url_for('static', filename='img/favicon.ico') ]]" type="image/x-icon">
+
+    <title>VISUAL DATA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #f0f0f0;   
+        }
+        .top-container img {
+            width: 350px; 
+        }
+        .top-container a {
+            text-decoration: none;
+        }
+        h1{
+            margin-left: 100px;
+            color:#5e6168
+        }
+        h2{
+            margin-left: 100px;
+            color:#5e6168
+        }
+        .data{
+            margin-left: 10%;
+            margin-top: 50px;
+        }
+        #dataTable {
+            border-collapse: collapse; /* Collapse borders */
+            width: 100%; /* Full-width */
+            border: 1px solid #ddd; /* Add a grey border */
+            font-size: 18px; /* Increase font-size */
+        }
+        
+        #dataTable th, #dataTable td {
+        text-align: left; /* Left-align text */
+        padding: 12px; /* Add padding */
+        }
+        
+        #dataTable tr {
+        /* Add a bottom border to all table rows */
+        border-bottom: 1px solid #ddd;
+        }
+        
+        #dataTable tr.header, #dataTable tr:hover {
+        /* Add a grey background color to the table header and on hover */
+        background-color: #f1f1f1;
+        }
+
+        #searchInput {
+            background-position: 10px 12px; /* Position the search icon */
+            background-repeat: no-repeat; /* Do not repeat the icon image */
+            width: 30%; 
+            font-size: 16px; /* Increase font-size */
+            padding: 12px 20px 12px 40px; /* Add some padding */
+            border: 2px solid #D3D3D3; 
+            margin-bottom: 12px; /* Add some space below the input */
+            border-radius:10px;
+            box-shadow: 0 0 5pt 2pt #D3D3D3;
+          }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top-container">
+        <a href="/preview"><img src="[[url_for('static',filename='img/logo_beta.png')]]" alt="logo"></a>
+    </div>
+    <h1>Report : {{report_name}}</h1>
+    <h2>Visual : {{visual}}</h2>
+    <div class="data">
+        {% if title %}
+            <h3>Title :</h3> {{title}}
+        {% endif %}
+        {% if position %}
+            <h3>Position</h3>
+            <ul>
+                <li>X : {{position["x"]}}</li>
+                <li>Y : {{position["y"]}}</li>
+                <li>Z : {{position["z"]}}</li>
+                <li>Width : {{position["width"]}}</li>
+                <li>Height : {{position["height"]}}</li>
+            </ul>
+        {% endif %}
+        {% if img_url %}
+        <div style="display:block;">
+            <h3>Image : {{img_url}}</h3>
+            <img src="[[url_for('static',filename='img/report/{{file}}/{{img_url}}')]]" alt={{img_url}} width=200px>
+        </div>
+        {% endif %}
+        {% if columns %}
+            <h3>Columns</h3>
+            {% for column in columns %}
+                <ul>
+                    <li>
+                        <p>{{column.removeprefix('col_')}}</p>
+                    </li>
+                {% if data[column] is string %}
+                    <ul>
+                        <li>{{ data[column] }}</li>
+                    </ul>
+                {% elif data[column] is iterable %}
+                    <ul>
+                    {% for col in data[column] %}
+                        <li>{{ col }}</li>
+                    {% endfor %}
+                    </ul>
+                {% else %}
+                    <ul>
+                        <li>{{ data[column] }}</li>
+                    </ul>
+                {% endif %}
+                
+                </ul>
+            {% endfor %}
+        {% endif %}
+        <h3>Other data</h3>
+        <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Search for data..">
+
+        <table class="dataTable" id="dataTable">
+        {% for k, dt in data.items() %}
+            <tr>
+                {% if k not in ig_list%}
+                    {% set k = k.replace("_"," ") %}
+                    <th>{{k}}</th>
+                    <th>:</th>
+                    {%if dt is iterable%}
+                        {%if dt is not string  %}
+                            {% set dt = dt | map('string') | join(', ') %}
+                        {%endif%}
+                    {%endif%}
+                    <td>{{dt}}</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </table>
+        
+    </div>
+
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("searchInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("dataTable");
+          tr = table.getElementsByTagName("tr");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            th = tr[i].getElementsByTagName("th")[0];
+           
+            if (th) {
+                txtValue = th.textContent || th.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }
+          }
+        }
+        </script>
+</body>
+</html>

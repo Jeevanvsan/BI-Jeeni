@@ -1,0 +1,15 @@
+also >> /
+location
+
+join type
+
+localdate
+
+colunms >> dax
+
+text must be passive
+
+>> file saved in
+
+
+implemet API

@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href={{"{{ url_for('static', filename='img/favicon.ico') }}"}} type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/report.css')}}">
+
+    <style>
+        /* Style for the horizontal list */
+        ul.horizontal-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for list items */
+        ul.horizontal-list li {
+            display: inline-block;
+            width: 24%; /* Adjust the width to control the number of items per row */
+            margin-right: 1%; /* Add some spacing between items */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Clear the right margin of the last item in each row */
+        ul.horizontal-list li:nth-child(4n) {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="top-container">
+    <div class="head">
+        <img src= {{"{{url_for('static',filename='img/logo.png')}}"}} alt= "logo">
+    </div>
+    <h1>FILENAME : {{filename}}</h1>
+    <div class="first-section">
+    <ul>
+        {% for report in reports %}
+            <li>
+                <a href="page/{{filename}}/{{report}}">
+                    <div >
+                        <a href="page/{{filename}}/{{report}}">
+                        <img src={{"{{url_for('static',filename='img/report.png')}}"}} alt="report">
+                    </a>
+                        <span class="dark">{{ report }}</span>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+        <li>
+            <a href="page/{{filename}}/schema">schema
+            <div >
+                <img src={{"{{url_for('static',filename='img/schema.png')}}"}} alt="schema">
+                <span class="dark">Schema</span>
+            </div>
+            </a>
+        </li>
+
+    </ul>
+    </div>
+</div>
+</body>
+</html>

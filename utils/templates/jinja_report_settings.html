@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="[[ url_for('static', filename='img/favicon.ico') ]]" type="image/x-icon">
+
+    <title>VISUAL DATA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #f0f0f0;   
+        }
+        .top-container img {
+            width: 350px; 
+        }
+        .top-container a {
+            text-decoration: none;
+        }
+        h1{
+            margin-left: 100px;
+            color:#5e6168
+        }
+        h2{
+            margin-left: 100px;
+            color:#5e6168
+        }
+        .data{
+            margin-left: 10%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-container">
+        <a href="/preview"><img src="[[url_for('static',filename='img/logo_beta.png')]]" alt="logo"></a>
+    </div>
+    <h1>Report : {{report_name}}</h1>
+    <h2>Canvas settings</h2>
+    <div class="data">
+        <ul>
+            {% for key,value in canvas.items() %}
+            {% if "url" in key%}
+            <div style="display:block;">
+                <li>background image url : {{value}}</li>
+                <img src="[[url_for('static',filename='img/report/{{file}}/{{value}}')]]" alt={{value}} width=200px>
+            </div>
+        {%else%}
+            <li>{{key}} : {{value}}</li>
+        {%endif%}
+            {% endfor %}
+        </ul>
+        
+    </div>
+    <h2>Wallaper settings</h2>
+    <div class="data">
+        <ul>
+            {% for key,value in wallpaper.items() %}
+                {% if "url" in key%}
+                    <div style="display:block;">
+                        <li>wallpaper image url : {{value}}</li>
+                        <img src="[[url_for('static',filename='img/report/{{file}}/{{value}}')]]" alt={{value}} width=200px>
+                    </div>
+                {%else%}
+                    <li>{{key}} : {{value}}</li>
+                {%endif%}
+            {% endfor %}
+        </ul>
+        
+    </div>
+</body>
+</html>

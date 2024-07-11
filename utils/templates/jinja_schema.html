@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="[[ url_for('static', filename='img/favicon.ico') ]]" type="image/x-icon">
+
+    <title>SCHEMA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #f0f0f0;   
+        }
+        td {
+            cursor: pointer;
+
+          }
+          th, td {
+            padding: 15px;
+          }
+        .top-container img {
+            width: 350px; 
+        }
+        .top-container a {
+            text-decoration: none;
+        }
+        table{
+            margin-top:50px;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            width:50%;
+            text-align:center;
+            margin-bottom:30px
+          }
+        th {
+            background-color: #f77700;
+            color: white;
+          }
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+        h1{
+            margin-left: 100px;
+            color:#5e6168
+        }
+        h2{
+            margin-left: 100px;
+            color:#5e6168
+        }
+        pre{
+            font-size:15px;
+            margin-left: 150px;
+            overflow-x: scroll;
+            word-wrap: break-word;
+            
+        }
+        #m_code{
+            margin: 10px 100px 10px 100px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        #brk{
+            margin:30px 10px 30px 10px;
+            height: 2px;
+            width: 100vw;
+            background-color: #000
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top-container">
+        <a href="/preview"><img src="[[url_for('static',filename='img/logo_beta.png')]]" alt="logo"></a>
+    </div>
+    <h1>schema of : {{filename}}</h1>
+        {% for tables in schema %}
+            <h2>Table name : {{tables.get('table_name')}}</h2> 
+            <table>
+                <tr>
+                    <th>COLUMNS</th>
+                    <th>DATATYPES</th>
+                </tr>
+            {% for col in tables.get('columns') %}
+                <tr>
+                    <td>{{col.get('name')}}</td>
+                    <td>{{col.get('datatype')}}</td>
+                </tr>
+            {% endfor %}
+            </table>
+
+            <h2>Mode : {{tables.get('mode')}}</h2> 
+            {% if tables.get('m_code') %}
+                <h2>M Code : </h2>
+                <div id="m_code">
+                    {% if tables.get('m_code') is string %}  
+                        <pre>{{tables.get('m_code')}}</pre>
+                    {% else  %}
+                        {% for m in tables.get('m_code') %}
+                        <pre>{{m}}</pre>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            {% endif %}
+            {% if tables.get('DAX') %}
+                <h2>DAX : </h2>
+                <div id="m_code">
+                    {% for d in tables.get('DAX') %}
+                    <h2>Name : {{d.get('name')}}</h2>
+                    <h2>Expression : </h2>
+                        {% if d.get('expression') is string %}  
+                            <pre>{{d.get('expression')}}</pre>
+                        {% else  %}
+                            {% for e in d.get('expression') %}
+                            <pre>{{e}}</pre>
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <div id="brk"></div>
+        {% endfor %}
+        {% if relations %}
+        <h2>Table Relations</h2>
+            {% for rel in relations %}
+                <table>
+                    <tr>
+                        <th>from_table</th>
+                        <td>{{rel.get('from_table')}}</td>
+                    </tr>
+                    <tr>
+                        <th>from_column</th>
+                        <td>{{rel.get('from_column')}}</td>
+                    </tr>
+                    <tr>
+                        <th>to_table</th>
+                        <td>{{rel.get('to_table')}}</td>
+                    </tr>
+                    <tr>
+                        <th>to_column</th>
+                        <td>{{rel.get('to_column')}}</td>
+                    </tr>
+            {% endfor %}
+        {% endif %}
+</body>
+</html>

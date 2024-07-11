@@ -1,0 +1,16 @@
+1. Either we can extract new file or can open saved extracted BIx file.
+
+2. New loading screen with progress bar and PowerBI tips.
+
+3. We can save extracted data. It will save on default location (user/documents/BIX)
+    as filename with .xlr .
+
+4. On schema added,
+	- Mode
+	- M code
+	- DAX
+	- Relations
+
+5. Extract custom visual data.
+
+6. Selectable download option.
