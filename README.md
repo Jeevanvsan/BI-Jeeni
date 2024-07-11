@@ -1,6 +1,4 @@
-# BIX
-
-![logo](static/img/logo_real.png)
+# BI-Jeeni
 
 BIxlerate: Empowering Data Extraction and Visualization Insights for Power BI
 
